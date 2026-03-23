@@ -11,6 +11,8 @@ type Project = {
   statusColor: string
   gradient: string
   highlight?: string
+  link?: string
+  linkLabel?: string
 }
 
 const projects: Project[] = [
@@ -46,14 +48,16 @@ const projects: Project[] = [
     gradient: 'from-[#fb923c] to-[#d4a843]',
   },
   {
-    icon: '🔄',
-    title: 'Automated Data Pipeline',
+    icon: '📄',
+    title: 'DocChat — AI Document Assistant',
     description:
-      'Scalable ETL pipeline ingesting, transforming, and loading structured and unstructured data from multiple sources into analytical stores for downstream BI reporting and ML workflows.',
-    tags: ['Python', 'ETL', 'Data Pipelines', 'Automation', 'Azure'],
-    status: 'Operational',
-    statusColor: 'text-[#94a3b8] bg-[rgba(148,163,184,0.1)] border-[rgba(148,163,184,0.3)]',
-    gradient: 'from-[#94a3b8] to-[#4f8ef7]',
+      'RAG chatbot that answers questions about PDFs, CSVs, and images using hybrid search (vector + keyword). Built with Azure AI Search, GPT-4o, Document Intelligence, and Streamlit. Includes source citations and streaming responses.',
+    tags: ['Python', 'RAG', 'Azure OpenAI', 'GPT-4o', 'Azure AI Search', 'Streamlit'],
+    status: 'Live Demo',
+    statusColor: 'text-[#4f8ef7] bg-[rgba(79,142,247,0.1)] border-[rgba(79,142,247,0.3)]',
+    gradient: 'from-[#4f8ef7] to-[#1d4ed8]',
+    link: 'https://smart-doc-search-ebeagmyzgnnpojgi9edsne.streamlit.app/',
+    linkLabel: 'Live Demo',
   },
   {
     icon: '🏢',
@@ -66,14 +70,16 @@ const projects: Project[] = [
     gradient: 'from-[#1d4ed8] to-[#4f8ef7]',
   },
   {
-    icon: '🚀',
-    title: 'Next Project Coming Soon',
+    icon: '📋',
+    title: 'Kanban Board',
     description:
-      'Currently exploring agentic AI workflows, multi-modal LLM applications, and intelligent process automation. Watch this space for the next release.',
-    tags: ['Agentic AI', 'Multimodal', 'Automation', 'LLMs'],
-    status: 'In Progress',
-    statusColor: 'text-slate-400 bg-slate-800 border-slate-600',
-    gradient: 'from-slate-700 to-slate-600',
+      'Single-board drag-and-drop task manager built with Next.js 14, TypeScript, and Tailwind CSS. Features smooth DnD interactions, column management, and a clean productivity-focused UI.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'Drag & Drop'],
+    status: 'Open Source',
+    statusColor: 'text-[#94a3b8] bg-[rgba(148,163,184,0.1)] border-[rgba(148,163,184,0.3)]',
+    gradient: 'from-[#94a3b8] to-[#475569]',
+    link: 'https://github.com/hamed-kamelr/kanban',
+    linkLabel: 'GitHub',
   },
 ]
 
@@ -116,7 +122,7 @@ export default function Portfolio() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="reveal glass-card overflow-hidden group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-350 cursor-default flex flex-col"
+              className="reveal glass-card overflow-hidden group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-350 flex flex-col"
               style={{ transitionDelay: `${i * 70}ms` }}
             >
               {/* Gradient Header */}
@@ -150,7 +156,7 @@ export default function Portfolio() {
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 mt-auto">
+                <div className="flex flex-wrap gap-1.5 mt-auto mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -160,6 +166,22 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+
+                {/* Link */}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-semibold text-[#4f8ef7] hover:text-white transition-colors group/link"
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    {project.linkLabel}
+                    <span className="opacity-0 group-hover/link:opacity-100 transition-opacity">↗</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}
