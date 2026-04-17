@@ -56,7 +56,7 @@ const projects: Project[] = [
     status: 'Live Demo',
     statusColor: 'text-[#4f8ef7] bg-[rgba(79,142,247,0.1)] border-[rgba(79,142,247,0.3)]',
     gradient: 'from-[#4f8ef7] to-[#1d4ed8]',
-    link: 'https://smart-doc-search-ebeagmyzgnnpojgi9edsne.streamlit.app/',
+    link: 'https://huggingface.co/spaces/hamed-kamelrh/doc-chat',
     linkLabel: 'Live Demo',
   },
   {
