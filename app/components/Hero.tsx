@@ -75,17 +75,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 pb-32">
-        {/* Available Badge */}
-        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass-card mb-10 border border-[rgba(148,163,184,0.2)]">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#94a3b8] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#94a3b8]" />
-          </span>
-          <span className="text-sm font-medium text-slate-300">
-            Available for opportunities&nbsp;&middot;&nbsp;Brisbane, QLD
-          </span>
-        </div>
-
         {/* Name */}
         <h1 className="font-heading font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[1.05] mb-6">
           <span className="text-white">Hamed </span>
