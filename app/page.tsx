@@ -1,10 +1,10 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
-import Timeline from './components/Timeline'
-import Education from './components/Education'
 import Skills from './components/Skills'
+import Timeline from './components/Timeline'
 import Portfolio from './components/Portfolio'
+import Education from './components/Education'
 import Contact from './components/Contact'
 import Chatbot from './components/Chatbot'
 
@@ -14,10 +14,10 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
-      <Timeline />
-      <Education />
       <Skills />
+      <Timeline />
       <Portfolio />
+      <Education />
       <Contact />
       <Chatbot />
     </main>
