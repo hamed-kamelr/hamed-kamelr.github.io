@@ -23,7 +23,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-[120px_0_80px]"
+      className="min-h-screen flex items-center justify-center pt-[120px] pb-[80px]"
     >
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="hero-card glass reveal text-center py-[60px] px-[50px] max-w-[720px] mx-auto relative">
