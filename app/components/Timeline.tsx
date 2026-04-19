@@ -17,28 +17,28 @@ const experiences: TimelineItem[] = [
   {
     company: 'Dept of Transport and Main Roads',
     role: 'IT Support Analyst',
-    period: 'Feb 2025 – Present',
+    period: 'Feb 2025 – Mar 2026',
     location: 'Brisbane, QLD',
     bullets: [
-      'Providing Tier 2 IT support across enterprise systems and infrastructure',
-      'Managing Microsoft Intune, Azure AD and endpoint configuration',
-      'Driving service improvement initiatives within Agile delivery frameworks',
+      'Designed and deployed Power Automate flows to automate repetitive IT tasks — including user provisioning, access requests, and notification workflows — reducing manual effort across the support team.',
+      'Leveraged Microsoft Copilot to accelerate incident documentation, knowledge base drafting, and email triage, improving response consistency and cutting handling time.',
+      'Administer Microsoft 365, Entra ID, and Active Directory for hundreds of users across Queensland, managing access control, group permissions, and endpoint configuration at scale.',
     ],
-    tags: ['Intune', 'Azure AD', 'M365', 'Agile'],
+    tags: ['Power Automate', 'Microsoft Copilot', 'M365', 'Entra ID', 'Automation', 'AI Tools'],
     color: 'cyan',
     current: true,
   },
   {
     company: 'Tech Mahindra',
     role: 'ICT Solution Analyst',
-    period: 'Jul 2024 – Jan 2025',
+    period: 'Jun 2024 – Jan 2025',
     location: 'Brisbane, QLD',
     bullets: [
-      'Analysed ICT requirements and designed tailored solutions for enterprise clients',
-      'Delivered integration and automation solutions using APIs and cloud services',
-      'Collaborated with cross-functional teams to ensure on-time delivery',
+      'Applied Gen AI tools to triage and categorise ServiceNow incidents, cutting average resolution time and reducing backlog across L1/L2 queues.',
+      'Identified repetitive support patterns and proposed automation solutions to eliminate recurring manual tasks, improving team efficiency across deployments.',
+      'Resolved over 95% of incidents within 24 hours — boosting user satisfaction by 30% over 5 months through structured troubleshooting and AI-assisted documentation.',
     ],
-    tags: ['Solution Design', 'APIs', 'Cloud', 'Enterprise IT'],
+    tags: ['ServiceNow', 'Gen AI', 'Automation', 'L1/L2 Support', 'AI Tools'],
     color: 'purple',
   },
   {
@@ -47,11 +47,11 @@ const experiences: TimelineItem[] = [
     period: 'Aug 2022 – Apr 2024',
     location: 'Brisbane, QLD',
     bullets: [
-      'Troubleshot Azure AD, SharePoint, and Office 365 issues for students and staff',
-      'Managed Oracle Service Cloud ticketing and escalation workflows',
-      'Supported identity management and access provisioning across university systems',
+      'Troubleshot Azure AD, SharePoint, and Office 365 issues for students and staff across the university.',
+      'Streamlined ticketing and escalation workflows in Oracle Service Cloud, identifying automation opportunities to reduce manual triage effort.',
+      'Supported identity management and access provisioning — contributing to process documentation used to inform future automation initiatives.',
     ],
-    tags: ['Azure AD', 'SharePoint', 'Oracle Service Cloud', 'O365'],
+    tags: ['Azure AD', 'SharePoint', 'Oracle Service Cloud', 'O365', 'Process Automation'],
     color: 'cyan',
   },
   {
@@ -82,15 +82,15 @@ const experiences: TimelineItem[] = [
   },
   {
     company: 'Taban Infrastructure Co.',
-    role: 'Business Development Associate',
+    role: 'Business Analyst',
     period: 'Feb 2021 – Jan 2022',
     location: 'Remote',
     bullets: [
-      'Researched market KPIs and competitive landscape to support growth strategy',
-      'Produced detailed reports and documentation for senior leadership',
-      'Supported business development activities across target verticals',
+      'Analysed market KPIs and competitive data to inform growth strategy, building structured reporting frameworks for senior leadership.',
+      'Identified inefficiencies in reporting processes and introduced semi-automated approaches to reduce manual data consolidation effort.',
+      'Produced data-driven business documentation, laying groundwork for more scalable, insight-led decision-making across the organisation.',
     ],
-    tags: ['Business Development', 'KPI Research', 'Reporting'],
+    tags: ['Business Analysis', 'KPI Reporting', 'Data Analysis', 'Process Improvement'],
     color: 'purple',
   },
 ]
@@ -151,31 +151,26 @@ export default function Timeline() {
         </div>
 
         {/* Timeline */}
-        <div className="relative">
-          {/* Center line - desktop only */}
-          <div className="hidden lg:block timeline-line" />
+        <div className="relative max-w-3xl mx-auto">
+          {/* Center line */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#4f8ef7] via-[#d4a843] to-[#94a3b8]" />
 
-          {/* Mobile left line */}
-          <div className="lg:hidden absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#4f8ef7] via-[#d4a843] to-[#94a3b8]" />
-
-          <div className="space-y-12">
+          <div className="space-y-8">
             {experiences.map((exp, i) => {
               const c = colorMap[exp.color]
-              const isLeft = i % 2 === 0
               return (
                 <div
                   key={i}
-                  className={`reveal relative flex flex-col lg:flex-row ${
-                    isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  } items-start lg:items-center gap-6 lg:gap-0`}
+                  className="reveal relative flex items-start gap-6"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
+                  {/* Dot */}
+                  <div className="absolute left-1/2 -translate-x-1/2 top-7 z-10">
+                    <div className={`w-4 h-4 rounded-full ${c.dot} ring-4 ring-[#060912]`} />
+                  </div>
+
                   {/* Card */}
-                  <div
-                    className={`w-full lg:w-[calc(50%-2.5rem)] ml-10 lg:ml-0 ${
-                      isLeft ? 'lg:pr-10' : 'lg:pl-10'
-                    }`}
-                  >
+                  <div className="w-full pt-2">
                     <div
                       className={`glass-card p-6 border ${c.border} hover:-translate-y-1 hover:border-opacity-60 transition-all duration-300`}
                     >
@@ -229,21 +224,6 @@ export default function Timeline() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Center Dot - desktop */}
-                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center justify-center w-5 h-5 z-10">
-                    <div
-                      className={`w-4 h-4 rounded-full ${c.dot} ring-4 ring-[#060912]`}
-                    />
-                  </div>
-
-                  {/* Mobile Dot */}
-                  <div className="lg:hidden absolute left-4 -translate-x-1/2 top-7 z-10">
-                    <div className={`w-3 h-3 rounded-full ${c.dot} ring-2 ring-[#060912]`} />
-                  </div>
-
-                  {/* Empty side spacer for desktop */}
-                  <div className="hidden lg:block w-[calc(50%-2.5rem)]" />
                 </div>
               )
             })}

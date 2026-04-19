@@ -31,8 +31,8 @@ const projects: Project[] = [
     icon: '🎙️',
     title: 'AI Voice Agent System',
     description:
-      'End-to-end voice agent powered by LLMs and RAG architecture. Integrates with external APIs and Webhooks to handle dynamic conversational flows for enterprise automation use cases.',
-    tags: ['LLMs', 'RAG', 'Voice AI', 'APIs', 'Webhooks', 'Python'],
+      'End-to-end voice agent powered by LLMs, RAG architecture, and ElevenLabs for realistic speech synthesis. Orchestrated with n8n workflows to automate dynamic conversational flows and integrate with external APIs and Webhooks for enterprise automation.',
+    tags: ['LLMs', 'RAG', 'ElevenLabs', 'n8n', 'Voice AI', 'APIs', 'Webhooks', 'Python'],
     status: 'Live Project',
     statusColor: 'text-[#4f8ef7] bg-[rgba(79,142,247,0.1)] border-[rgba(79,142,247,0.3)]',
     gradient: 'from-[#4f8ef7] to-[#94a3b8]',
