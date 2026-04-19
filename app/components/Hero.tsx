@@ -69,7 +69,7 @@ export default function Hero() {
 
           {/* Tagline */}
           <p className="text-[1.05rem] text-[rgba(232,224,240,0.9)] max-w-[500px] mx-auto mb-9 leading-[1.7]">
-            Bridging enterprise IT infrastructure and cutting-edge AI — from cloud orchestration to deep learning models, I build solutions that actually work.
+            Turning AI into real workflows — embedding automation into everyday business operations. I turn complex IT and AI into simple, scalable systems that teams rely on every day.
           </p>
 
           {/* Social Links */}

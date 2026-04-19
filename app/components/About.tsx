@@ -21,7 +21,7 @@ const highlights = [
   {
     icon: '☁️',
     title: 'Cloud & Azure',
-    desc: 'Azure AD, Intune, Exchange and M365 — managing enterprise environments at scale.',
+    desc: 'Azure AD, Intune, Defender, Exchange and M365 — managing enterprise environments at scale.',
   },
 ]
 
@@ -64,23 +64,23 @@ export default function About() {
             <span className="gradient-text">IT Specialist</span>
           </h2>
           <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
-            I'm an AI Engineer and IT Specialist based in Brisbane, currently with the{' '}
-            <span className="text-slate-200 font-medium">Department of Transport and Main Roads</span>,
-            where I support enterprise infrastructure and drive continuous improvements in IT service
-            delivery.
+            I'm an AI Engineer focused on building practical, production-ready AI systems that improve how organisations operate. My work centres on turning AI from a concept into something teams can reliably use — embedding it into real workflows to reduce manual effort, improve consistency, and unlock better decision-making.
           </p>
           <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
-            My background spans cloud infrastructure, data science, and applied AI. I hold a{' '}
-            <span className="text-slate-200 font-medium">Master of Data Science from USQ</span> and
-            have published research on entrepreneurial skills in SMEs, while building production AI
-            systems — including a RAG document chatbot powered by{' '}
-            <span className="text-slate-200 font-medium">Azure OpenAI &amp; GPT-4o</span>, voice
-            agents, and a deep learning model for Alzheimer's prediction achieving{' '}
-            <span className="text-[#4f8ef7] font-semibold">98% accuracy</span>.
+            I design and deliver end-to-end AI solutions, including{' '}
+            <span className="text-slate-200 font-medium">retrieval-augmented generation (RAG) systems</span>,
+            conversational agents, and AI-assisted automation. My recent work includes building a RAG document chatbot using{' '}
+            <span className="text-slate-200 font-medium">Azure OpenAI (GPT-4o)</span>, developing voice-enabled agents, and applying machine learning models to solve real-world problems. I focus on making these systems usable, scalable, and aligned with business needs — not just technically sound.
+          </p>
+          <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
+            Alongside my AI work, I bring a strong foundation in enterprise IT infrastructure through my role with the{' '}
+            <span className="text-slate-200 font-medium">Department of Transport and Main Roads</span>.
+            This allows me to bridge the gap between experimentation and production — ensuring AI solutions are secure, reliable, and fit within real-world environments.
           </p>
           <p className="reveal text-slate-400 leading-relaxed mb-8 text-base">
-            I thrive at the intersection of structured IT operations and exploratory AI experimentation
-            — bringing rigour, creativity, and a results-first mindset to every project.
+            I hold a <span className="text-slate-200 font-medium">Master of Data Science from USQ</span> and
+            take a hands-on, iterative approach to building with AI — rapidly prototyping, validating outputs, and refining systems based on real usage. I'm particularly interested in{' '}
+            <span className="text-[#4f8ef7] font-semibold">workflow automation</span>, AI adoption, and designing systems that people actually trust and use.
           </p>
 
           {/* Links */}
