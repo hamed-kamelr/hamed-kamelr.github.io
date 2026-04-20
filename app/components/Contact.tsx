@@ -30,7 +30,7 @@ const contactCards = [
     ),
     label: 'LinkedIn',
     value: 'linkedin.com/in/hamedkamel',
-    href: 'https://linkedin.com/in/hamedkamel',
+    href: 'https://www.linkedin.com/in/hamedkamel',
     color: 'blue',
     border: 'border-[rgba(59,130,246,0.2)] hover:border-[rgba(59,130,246,0.5)]',
     iconBg: 'bg-[rgba(59,130,246,0.1)] text-[#60a5fa]',
@@ -180,7 +180,7 @@ export default function Contact() {
               Email
             </a>
             <a
-              href="https://linkedin.com/in/hamedkamel"
+              href="https://www.linkedin.com/in/hamedkamel"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-500 hover:text-[#4f8ef7] text-sm transition-colors"
