@@ -118,8 +118,6 @@ export default function Contact() {
               <a
                 key={i}
                 href={card.href}
-                target={card.href.startsWith('http') ? '_blank' : undefined}
-                rel={card.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className={`reveal glass-card p-6 border ${card.border} ${card.glow} hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center gap-3 no-underline`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
@@ -181,16 +179,16 @@ export default function Contact() {
             </a>
             <a
               href="https://www.linkedin.com/in/hamedkamel"
-              target="_blank"
-              rel="noopener noreferrer"
+              
+              
               className="text-slate-500 hover:text-[#4f8ef7] text-sm transition-colors"
             >
               LinkedIn
             </a>
             <a
               href="https://github.com/hamed-kamelr"
-              target="_blank"
-              rel="noopener noreferrer"
+              
+              
               className="text-slate-500 hover:text-[#4f8ef7] text-sm transition-colors"
             >
               GitHub
