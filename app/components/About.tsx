@@ -86,7 +86,7 @@ export default function About() {
           {/* Links */}
           <div className="reveal flex flex-wrap gap-4">
             <a
-              href="https://linkedin.com/in/hamedkamel"
+              href="https://www.linkedin.com/in/hamedkamel"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 px-5 py-2.5 rounded-full glass-card border border-[rgba(79,142,247,0.2)] text-[#4f8ef7] text-sm font-medium hover:border-[#4f8ef7] hover:bg-[rgba(79,142,247,0.08)] transition-all"

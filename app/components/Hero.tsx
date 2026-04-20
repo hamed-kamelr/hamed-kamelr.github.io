@@ -79,7 +79,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/hamedkamel"
+              href="https://www.linkedin.com/in/hamedkamel"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 py-2.5 px-[22px] rounded-xl font-heading text-[0.85rem] font-medium no-underline text-[#e8e0f0] bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-300 hover:bg-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5"
