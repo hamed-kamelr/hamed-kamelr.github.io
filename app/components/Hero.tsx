@@ -69,8 +69,8 @@ export default function Hero() {
           <div className="flex gap-4 justify-center flex-wrap">
             <a
               href="https://github.com/hamed-kamelr"
-              target="_blank"
-              rel="noopener noreferrer"
+              
+              
               className="inline-flex items-center gap-2 py-2.5 px-[22px] rounded-xl font-heading text-[0.85rem] font-medium no-underline text-[#e8e0f0] bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-300 hover:bg-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5"
             >
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -80,8 +80,8 @@ export default function Hero() {
             </a>
             <a
               href="https://www.linkedin.com/in/hamedkamel"
-              target="_blank"
-              rel="noopener noreferrer"
+              
+              
               className="inline-flex items-center gap-2 py-2.5 px-[22px] rounded-xl font-heading text-[0.85rem] font-medium no-underline text-[#e8e0f0] bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-300 hover:bg-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5"
             >
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
