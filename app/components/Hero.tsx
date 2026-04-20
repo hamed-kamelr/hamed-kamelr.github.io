@@ -27,6 +27,13 @@ export default function Hero() {
     >
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="hero-card glass reveal text-center py-[60px] px-[50px] max-w-[720px] mx-auto relative">
+          {/* Photo */}
+          <img
+            src="/photo.jpg"
+            alt="Hamed Kamel Rahimi"
+            className="hero-photo"
+          />
+
           {/* Greeting */}
           <p className="font-heading text-[0.95rem] font-medium text-[#0d9488] tracking-[0.15em] uppercase mb-4">
             Hello, I&apos;m
