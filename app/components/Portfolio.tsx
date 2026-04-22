@@ -70,6 +70,18 @@ const projects: Project[] = [
     gradient: 'from-[#1d4ed8] to-[#4f8ef7]',
   },
   {
+    icon: '🎧',
+    title: 'IT Helpdesk Ticket Automation',
+    description:
+      'AI-powered helpdesk triage system that automatically classifies, prioritises, and drafts responses for IT support tickets. Built with FastAPI and the Anthropic API — eliminating manual triage and ensuring consistent urgency scoring across all incoming requests.',
+    tags: ['Python', 'FastAPI', 'Anthropic API', 'LLMs', 'SQLite', 'REST API', 'Vanilla JS'],
+    status: 'Portfolio Project',
+    statusColor: 'text-[#a78bfa] bg-[rgba(167,139,250,0.1)] border-[rgba(167,139,250,0.3)]',
+    gradient: 'from-[#4f46e5] to-[#7c3aed]',
+    link: 'https://github.com/hamed-kamelr/helpdesk-triage',
+    linkLabel: 'GitHub',
+  },
+  {
     icon: '📋',
     title: 'Kanban Board',
     description:
