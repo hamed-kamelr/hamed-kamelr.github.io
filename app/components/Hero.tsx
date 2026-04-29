@@ -64,7 +64,7 @@ export default function Hero() {
               letterSpacing: '0.01em',
             }}
           >
-            IT Specialist &amp; <em className="not-italic font-semibold gradient-text">AI Engineer</em>
+            AI Developer &amp; <em className="not-italic font-semibold gradient-text">IT Specialist</em>
           </p>
 
           {/* Tagline */}
