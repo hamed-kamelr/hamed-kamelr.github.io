@@ -59,12 +59,12 @@ export default function About() {
             <span>◈</span> About Me
           </div>
           <h2 className="reveal font-heading font-bold text-4xl sm:text-5xl text-white mb-6 leading-tight">
-            AI Engineer &amp;
+            AI Developer &amp;
             <br />
             <span className="gradient-text">IT Specialist</span>
           </h2>
           <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
-            I'm an AI Engineer focused on building practical, production-ready AI systems that improve how organisations operate. My work centres on turning AI from a concept into something teams can reliably use — embedding it into real workflows to reduce manual effort, improve consistency, and unlock better decision-making.
+            I'm an AI developer focused on building practical, production-ready AI systems that improve how organisations operate. My work centres on turning AI from a concept into something teams can reliably use — embedding it into real workflows to reduce manual effort, improve consistency, and unlock better decision-making.
           </p>
           <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
             I design and deliver end-to-end AI solutions, including{' '}
