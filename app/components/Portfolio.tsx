@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
 type Project = {
@@ -13,6 +14,7 @@ type Project = {
   highlight?: string
   link?: string
   linkLabel?: string
+  screenshot?: string
 }
 
 const projects: Project[] = [
@@ -82,6 +84,16 @@ const projects: Project[] = [
     linkLabel: 'GitHub',
   },
   {
+    icon: '🎁',
+    title: 'Power Apps — Gifts & Benefits Register',
+    description:
+      'End-to-end Power Platform solution for managing staff gift declarations and compliance approvals. Built with a Canvas App for submissions, a Power Automate approval flow triggered when gift value exceeds $300, a Model-driven app for management review, and Dataverse as the data backbone.',
+    tags: ['Power Apps', 'Power Automate', 'Dataverse', 'Canvas App', 'Model-Driven App', 'Microsoft 365'],
+    status: 'Portfolio Project',
+    statusColor: 'text-[#a855f7] bg-[rgba(168,85,247,0.1)] border-[rgba(168,85,247,0.3)]',
+    gradient: 'from-[#7c3aed] to-[#a855f7]',
+  },
+  {
     icon: '📋',
     title: 'Kanban Board',
     description:
@@ -138,18 +150,30 @@ export default function Portfolio() {
               style={{ transitionDelay: `${i * 70}ms` }}
             >
               {/* Gradient Header */}
-              <div
-                className={`bg-gradient-to-br ${project.gradient} p-6 flex items-start justify-between relative overflow-hidden`}
-              >
-                <div className="text-4xl z-10 relative">{project.icon}</div>
-                {project.highlight && (
-                  <div className="z-10 relative bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
-                    {project.highlight}
-                  </div>
-                )}
-                <div className="absolute inset-0 bg-[#060912] opacity-30" />
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[rgba(6,9,18,0.8)] to-transparent" />
-              </div>
+              {project.screenshot ? (
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={project.screenshot}
+                    alt={project.title}
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,9,18,0.7)] to-transparent" />
+                </div>
+              ) : (
+                <div
+                  className={`bg-gradient-to-br ${project.gradient} p-6 flex items-start justify-between relative overflow-hidden`}
+                >
+                  <div className="text-4xl z-10 relative">{project.icon}</div>
+                  {project.highlight && (
+                    <div className="z-10 relative bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+                      {project.highlight}
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-[#060912] opacity-30" />
+                  <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[rgba(6,9,18,0.8)] to-transparent" />
+                </div>
+              )}
 
               {/* Body */}
               <div className="p-6 flex flex-col flex-1">
