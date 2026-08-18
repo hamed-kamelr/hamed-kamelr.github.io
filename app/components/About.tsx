@@ -19,9 +19,9 @@ const highlights = [
     desc: "Developed a 98% accurate Alzheimer's prediction model using MRI imaging and convolutional networks.",
   },
   {
-    icon: '☁️',
-    title: 'Cloud & Azure',
-    desc: 'Azure AD, Intune, Defender, Exchange and M365 — managing enterprise environments at scale.',
+    icon: '⚙️',
+    title: 'Power Automate',
+    desc: 'Turning manual approvals, inbox triage, and lead routing into self-running flows across SharePoint, Dynamics 365, and Teams — backed by hands-on Azure AD, Intune, and M365 administration.',
   },
 ]
 
@@ -73,8 +73,9 @@ export default function About() {
             <span className="text-slate-200 font-medium">Azure OpenAI (GPT-4o)</span>, developing voice-enabled agents, and applying machine learning models to solve real-world problems. I focus on making these systems usable, scalable, and aligned with business needs — not just technically sound.
           </p>
           <p className="reveal text-slate-400 leading-relaxed mb-5 text-base">
-            Alongside my AI work, I bring a strong foundation in enterprise IT infrastructure through my role with the{' '}
-            <span className="text-slate-200 font-medium">Department of Transport and Main Roads</span>.
+            Alongside my AI work, I bring a strong foundation in enterprise IT infrastructure through my current role as a{' '}
+            <span className="text-slate-200 font-medium">System Analyst at Container for Exchange (COEX)</span>, building on prior experience at the Department of Transport and Main Roads. I love turning clunky, manual processes into seamless automation —{' '}
+            <span className="text-slate-200 font-medium">designing Power Automate flows</span> that stitch together SharePoint, Dynamics 365, Teams, and shared mailboxes across the Microsoft ecosystem. Whether it's auto-routing leads from an inbox straight into Dynamics 365 or firing off an approval the second a form is submitted, I build automations that just work.
             This allows me to bridge the gap between experimentation and production — ensuring AI solutions are secure, reliable, and fit within real-world environments.
           </p>
           <p className="reveal text-slate-400 leading-relaxed mb-8 text-base">

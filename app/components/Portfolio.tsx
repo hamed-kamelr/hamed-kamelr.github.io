@@ -60,16 +60,6 @@ const projects: Project[] = [
     linkLabel: 'Live Demo',
   },
   {
-    icon: '🏢',
-    title: 'Enterprise IT Infrastructure',
-    description:
-      'Designed and maintained enterprise Microsoft 365 environments — including Azure AD, Intune MDM, Exchange Online, and SharePoint — for education and government sector clients.',
-    tags: ['Azure AD', 'Intune', 'Exchange Online', 'SharePoint', 'M365', 'IT Operations'],
-    status: 'Ongoing',
-    statusColor: 'text-[#60a5fa] bg-[rgba(96,165,250,0.1)] border-[rgba(96,165,250,0.3)]',
-    gradient: 'from-[#1d4ed8] to-[#4f8ef7]',
-  },
-  {
     icon: '🎧',
     title: 'IT Helpdesk Ticket Automation',
     description:
@@ -79,6 +69,18 @@ const projects: Project[] = [
     statusColor: 'text-[#a78bfa] bg-[rgba(167,139,250,0.1)] border-[rgba(167,139,250,0.3)]',
     gradient: 'from-[#4f46e5] to-[#7c3aed]',
     link: 'https://github.com/hamed-kamelr/helpdesk-triage',
+    linkLabel: 'GitHub',
+  },
+  {
+    icon: '🎁',
+    title: 'Power Apps — Gifts & Benefits Register',
+    description:
+      'End-to-end Power Platform solution for managing staff gift declarations and compliance approvals. Built with a Canvas App for submissions, a Power Automate approval flow triggered when gift value exceeds $300, a Model-driven app for management review, and Dataverse as the data backbone.',
+    tags: ['Power Apps', 'Power Automate', 'Dataverse', 'Canvas App', 'Model-Driven App', 'Microsoft 365'],
+    status: 'Portfolio Project',
+    statusColor: 'text-[#db2777] bg-[rgba(219,39,119,0.1)] border-[rgba(219,39,119,0.3)]',
+    gradient: 'from-[#be185d] to-[#db2777]',
+    link: 'https://github.com/hamed-kamelr/power-apps-project',
     linkLabel: 'GitHub',
   },
   {
