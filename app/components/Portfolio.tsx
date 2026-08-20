@@ -84,6 +84,18 @@ const projects: Project[] = [
     linkLabel: 'GitHub',
   },
   {
+    icon: '🎂',
+    title: 'Power Apps — Birthday Reminder App',
+    description:
+      'HR-focused Power Platform app for tracking employee birthdays. HR staff view upcoming birthdays, filter by department or location, and mark them as acknowledged to avoid duplicate celebrations — with Dataverse tables for Employees, Departments, Locations, and Acknowledgments.',
+    tags: ['Power Apps', 'Dataverse', 'Power Automate', 'Canvas App', 'Microsoft 365'],
+    status: 'Portfolio Project',
+    statusColor: 'text-[#34d399] bg-[rgba(52,211,153,0.1)] border-[rgba(52,211,153,0.3)]',
+    gradient: 'from-[#10b981] to-[#34d399]',
+    link: 'https://github.com/hamed-kamelr/birthday-reminder-app',
+    linkLabel: 'GitHub',
+  },
+  {
     icon: '📋',
     title: 'Kanban Board',
     description:
