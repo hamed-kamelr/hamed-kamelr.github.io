@@ -50,31 +50,6 @@ const contactCards = [
     iconBg: 'bg-[rgba(212,168,67,0.1)] text-[#d4a843]',
     glow: 'hover:shadow-[0_0_30px_rgba(212,168,67,0.12)]',
   },
-  {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-    label: 'Location',
-    value: 'Greater Brisbane Area, QLD',
-    href: '#',
-    color: 'purple',
-    border: 'border-[rgba(212,168,67,0.2)] hover:border-[rgba(212,168,67,0.5)]',
-    iconBg: 'bg-[rgba(212,168,67,0.1)] text-[#d4a843]',
-    glow: 'hover:shadow-[0_0_30px_rgba(212,168,67,0.12)]',
-  },
 ]
 
 export default function Contact() {
@@ -113,7 +88,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Cards */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
             {contactCards.map((card, i) => (
               <a
                 key={i}
@@ -193,7 +168,6 @@ export default function Contact() {
             >
               GitHub
             </a>
-            <span className="text-slate-600 text-sm">Brisbane, QLD</span>
           </div>
         </div>
       </footer>

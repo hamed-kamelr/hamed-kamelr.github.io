@@ -37,7 +37,7 @@ const KB: Record<string, Intent> = {
       'summary', 'overview', 'background', 'profile',
     ],
     responses: [
-      "Hamed Kamel Rahimi is an IT Specialist and AI & Automation Enthusiast based in Greater Brisbane, QLD. He bridges enterprise IT infrastructure with cutting-edge AI — from managing Azure cloud environments to building deep-learning models with 98% accuracy. He's passionate about solving real-world problems with technology and loves connecting with new people.",
+      "Hamed Kamel Rahimi is an IT Specialist and AI & Automation Enthusiast. He bridges enterprise IT infrastructure with cutting-edge AI — from managing Azure cloud environments to building deep-learning models with 98% accuracy. He's passionate about solving real-world problems with technology and loves connecting with new people.",
       "Hamed is a tech professional with a unique blend of enterprise IT expertise and hands-on AI/ML experience. Currently a System Analyst at Container for Exchange (COEX), he also has a Master's in Data Science and has built everything from voice agents using LLMs to Alzheimer's prediction models. He's a fast learner who thrives in fast-paced environments.",
     ],
   },
@@ -147,18 +147,18 @@ const KB: Record<string, Intent> = {
       'linkedin', 'message', 'available', 'opportunity', 'work together',
     ],
     responses: [
-      "You can reach Hamed directly:\n\n📧 **Email**: hamed.kamel35@gmail.com\n💼 **LinkedIn**: linkedin.com/in/hamedkamel\n📍 **Location**: Greater Brisbane Area, QLD, Australia\n\nHe loves connecting with new people — don't hesitate to reach out!",
-      "Hamed is always open to interesting conversations and opportunities! Best ways to connect:\n\n• Email: hamed.kamel35@gmail.com\n• LinkedIn: linkedin.com/in/hamedkamel\n\nHe's based in Greater Brisbane and responds promptly.",
+      "You can reach Hamed directly:\n\n📧 **Email**: hamed.kamel35@gmail.com\n💼 **LinkedIn**: linkedin.com/in/hamedkamel\n\nHe loves connecting with new people — don't hesitate to reach out!",
+      "Hamed is always open to interesting conversations and opportunities! Best ways to connect:\n\n• Email: hamed.kamel35@gmail.com\n• LinkedIn: linkedin.com/in/hamedkamel\n\nHe responds promptly.",
     ],
   },
   location: {
     patterns: [
       'location', 'where', 'based', 'brisbane', 'australia', 'queensland',
-      'qld', 'city', 'country', 'live', 'reside',
+      'qld', 'city', 'country', 'live', 'reside', 'address', 'relocate',
     ],
     responses: [
-      "Hamed is based in the Greater Brisbane Area, Queensland, Australia. He currently works as a System Analyst at Container for Exchange (COEX).",
-      "He's in Brisbane, QLD, Australia — working as a System Analyst at Container for Exchange (COEX).",
+      "Hamed doesn't list his home location publicly. If it's about working together or a role, reach out directly and he'll share what's relevant — hamed.kamel35@gmail.com or linkedin.com/in/hamedkamel.",
+      "That's not something Hamed shares publicly. For anything location- or availability-related, the best bet is to contact him directly at hamed.kamel35@gmail.com or on LinkedIn.",
     ],
   },
   publication: {
@@ -205,7 +205,7 @@ const KB: Record<string, Intent> = {
       'what should i ask', 'options', 'capabilities',
     ],
     responses: [
-      "I can answer questions about Hamed, such as:\n\n• 💼 Current role & career history\n• 🛠️ Skills & technologies\n• 🚀 Projects & portfolio\n• 🎓 Education & certifications\n• 📍 Location & availability\n• 📬 How to contact him\n\nJust ask in plain English!",
+      "I can answer questions about Hamed, such as:\n\n• 💼 Current role & career history\n• 🛠️ Skills & technologies\n• 🚀 Projects & portfolio\n• 🎓 Education & certifications\n• 📬 How to contact him\n\nJust ask in plain English!",
     ],
   },
   thanks: {
