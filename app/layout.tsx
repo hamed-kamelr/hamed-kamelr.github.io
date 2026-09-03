@@ -4,14 +4,13 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Hamed Kamel Rahimi | AI Developer & IT Specialist',
   description:
-    'Portfolio of Hamed Kamel Rahimi — IT Support Analyst at the Queensland Government, AI & Automation Engineer, and Data Science professional based in Greater Brisbane, QLD. Specialising in Azure, LLMs, RAG, deep learning, and Power BI.',
+    'Portfolio of Hamed Kamel Rahimi — IT Support Analyst at the Queensland Government, AI & Automation Engineer, and Data Science professional. Specialising in Azure, LLMs, RAG, deep learning, and Power BI.',
   keywords: [
     'Hamed Kamel Rahimi',
     'IT Specialist',
     'AI Engineer',
     'Power BI',
     'Azure',
-    'Brisbane',
     'Data Science',
     'LLM',
     'RAG',
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hamed Kamel Rahimi | AI Developer & IT Specialist',
     description:
-      'IT Support Analyst (Queensland Government) and AI Engineer based in Brisbane, QLD. Expert in Azure, Power BI, LLMs, RAG, and enterprise IT.',
+      'IT Support Analyst (Queensland Government) and AI Engineer. Expert in Azure, Power BI, LLMs, RAG, and enterprise IT.',
     type: 'website',
   },
 }
